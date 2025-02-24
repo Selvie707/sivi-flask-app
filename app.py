@@ -26,7 +26,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
 
 mail = Mail(app)
 
-model = YOLO(os.getenv('YOLO_MODEL_PATH'))
+model = YOLO(os.getenv('besty.pt'))
 
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = True
