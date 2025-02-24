@@ -1,7 +1,4 @@
 # nixpacks.toml
 
 [start]
-cmd = "gunicorn app:app"
-
-[phases.setup]
-nixPkgs = ["libglvnd", "libx11", "libxcb", "mesa", "mesa_drivers", "gcc"]
+cmd = "docker build -t myapp . && docker run -p 8080:8080 myapp"
